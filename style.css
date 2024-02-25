@@ -1,0 +1,123 @@
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding-top: 70px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #a80534;
+  padding: 10px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.topnav a {
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.search-container-hospital {
+  background-color: #f2f2f2;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  z-index: 998;
+}
+
+form {
+  background-color: #fff;
+  width: 300px;
+  height: 43px;
+  border-radius: 11px;
+  display: flex;
+  align-items: center;
+}
+
+input {
+  all: unset;
+  font: 15px system-ui;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  padding: 6px 9px;
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.card {
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  border: 2px solid red;
+  transition: box-shadow 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+}
+
+.catalogue-bar {
+background-color: #a80534;
+padding: 10px;
+width: 100%;
+display: flex;
+justify-content: space-around; /* Adjusted for spacing between items */
+position: sticky;
+top: 70px;
+z-index: 1; /* Ensure it's above other content */
+}
+
+#map {
+  height: calc(100vh - 120px); /* Adjusted to fit remaining space */
+  width: 100%;
+  background-color: lightgray;
+}
+
+.catalogue-item {
+  color: #000;
+  text-align: center;
+  padding: 0.7rem;
+  border-radius: 5px;
+}
+
+.catalogue-item:hover {
+  background-color: #fff;
+}
